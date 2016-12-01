@@ -1,10 +1,11 @@
 <p id="notice"><%= notice %></p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+  <h3><strong>Title:</strong>
+  <%= @article.title %></h3>
+</div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-
+<div class="panel-body"
 <p>
   <strong>Description:</strong>
   <%= @article.description %>
@@ -13,3 +14,6 @@
 <%= link_to 'Edit', edit_article_path(@article) %> |
 	<%end%>
 <%= link_to 'Back', articles_path %>
+</div>
+</div>
+
