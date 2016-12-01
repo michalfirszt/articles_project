@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   root 'articles#index'
 
-  get 'profile', to: 'profile#my' 
+  get 'profile', to: 'profile#my'
+
+  get 'invitation/index' 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
